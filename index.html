@@ -1,0 +1,55 @@
+<!-- TODO: -->
+<!-- videos play as scroll through -->
+<!-- better mobile version that is more like the desktop -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arias Dinan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+    SCROLL_TRANSISTION = 30
+    window.onscroll = () => {
+        if (document.body.scrollTop > SCROLL_TRANSISTION || document.documentElement.scrollTop > SCROLL_TRANSISTION) {
+            document.getElementById("header").style.fontSize = "50px";
+        } else {
+            document.getElementById("header").style.fontSize = "160px";
+        }
+    }
+</script>
+
+</head>
+<body>
+
+<h1 id="header">Arias Dinan</h1>
+
+<div class="top-container">
+    <div id="pages">
+        <a href="gallery.html">Gallery</a>
+        <a href="colorsprout.html">Colorsprout</a>
+    </div>
+
+    <img id="headshot" src="./images/ari.jpeg">
+
+    <p>
+        Based in Milwaukee Wisconsin, Ari Dinan is an interdisciplinary artist with a primary focus in textiles,
+        fashion, ink, collage, and music. Ari has had a passion for the environment from a very young age, and involves 
+        themes of sustainability in much of his work, like his current project, "The Time Brick," which he hopes
+        will create new expansions on affordable housing and plastic waste collection in his community.
+        As a high school student at Reagan, Ari hopes to one day pursue art in harmony with environmental defense law.
+        Currently, he spends most of his time sewing, writing, and making music with his rock band, Wonderbubble.
+    </p>
+
+<a href="https://www.instagram.com/ari_arrington/" target="_blank">@ari_arrington</a>
+
+<a href="mailto:ari@ariasdinan.com" target="_blank">ari@ariasdinan.com</a>
+</div>
+
+</body>
+</html> 
