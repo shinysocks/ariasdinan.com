@@ -1,14 +1,33 @@
-* {
-    padding: 0px;
-    margin: 0px;
+/* * { */
+/*     padding: 0px; */
+/*     margin: 0px; */
+/* } */
+
+body {
+    /* background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/10307.jpg") */
+    background-color: black;
 }
 
-.top-container {
+#orbit {
+    background-color: black;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    width: 100vw;
-    flex-wrap: wrap;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#left-orbit {
+    align-content: center;
+
+}
+
+#right-orbit {
+    align-content: center;
 }
 
 p {
@@ -21,18 +40,35 @@ p {
 }
 
 #headshot {
-    height: 100vh;
     margin: 0px;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    align-self: center;
 }
 
 #header {
+    margin: 0px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 400;
     font-style: normal;
     color: white;
-    margin: 0px;
-    padding: 0px;
     position: fixed;
+
+    top: 10px;
+    left: 20px;
+    
     transition: 0.3s;
 }
+
+.circle-button {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
